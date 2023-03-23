@@ -31,6 +31,7 @@ private:
 
     int mWidth { 0 };
     int mHeight { 0 };
+    juce::TextEditor mTextEditor;
     
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (ResizablePluginAudioProcessorEditor)
 };
