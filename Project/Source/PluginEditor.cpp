@@ -55,4 +55,17 @@ void ResizablePluginAudioProcessorEditor::resized()
 {
     // This is generally where you'll want to lay out the positions of any
     // subcomponents in your editor..
+    
+    const auto w = getWidth();
+    const auto h = getHeight();
+
+    DBG("w = " + String(w) + ", h = " + String(h));
+    
+    if (w < mWidth || h < mHeight)
+    {
+        DBG("Smaller than previous size!");
+    }
+    
+    mWidth = w;
+    mHeight = h;
 }
